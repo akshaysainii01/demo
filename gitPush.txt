@@ -1,0 +1,154 @@
+create file (.gitignore) secure node_modules and .env
+step1: git init
+step 2:git add .
+step3:git commit -m "success"
+step4:git branch -M main
+step 5: git remote add origin "link"
+step 6:git push -u origin main
+
+
+
+
+Git Get Started
+
+Insert the missing part of the command to check which version of Git (if any) is installed.
+git --version
+Initialize Git on the current folder
+git init
+Set the user name for the current repository to "akshaykumar2043":
+git config user.name "akshaykumar2043"
+Set the user email for the current repository to "akshaysaini362@gmail.com":
+git config user.email "akshaysaini362@gmail.com"
+Git New Files
+
+Check the status of the Git:
+git status
+
+
+Git Staging Enviornment
+
+Add index.html to the Staging Enviornment:
+git add index.html
+Stage all new, modified, and deleted files. Use the shorthand command:
+git add -A
+Git Help
+
+Show the possible options for the status command in command line:
+git status -help
+Show all git possible commands in command line:
+git help --all
+Git Commit
+
+Commit the changes to the current repository with the message "First release!"
+git commit -m "First release!"
+Check the compact version of the status for repository:
+git status --short
+
+
+Git Commit
+
+Commit the changes to the current repository with the message "First release!"
+git commit -m "First release!"
+Check the compact version of the status for repository:
+git status –short
+
+Commit the updated files directly, skipping the staging environment:
+git commit -a -m "New line added"
+View the history of commits for the repository:
+git log
+Git Branch
+Create a new branch called hello-world-images:
+git branch hello-world-images
+List the existing branches:
+git branch
+Move to the hello-world-images branch:
+git checkout hello-world-images
+Create, and move to a new branch with the name hello-you:
+git checkout -b hello-you
+Create, and move to a new branch with the name hello-you:
+git checkout -b hello-you
+
+
+Git Branch Merge
+
+Merge the hello-you branch with the current branch:
+git merge hello-you
+Remove the hello-you branch from the local repository:
+git branch -d hello-you
+Git Remote Get Started
+
+Add a remote repository as an origin:
+git remote add origin https://github.com/x/y.git
+Git Pull from Remote
+
+pull is a combination of:
+fetch and then merge
+Get all the change history of the origin for this branch:
+git fetch origin
+Merge the current branch with the branch master, on origin:
+git merge origin/master
+Update the current branch from its origin using a single command:
+git pull origin
+Git Push to Remote 
+
+push the current branch to its default remote origin:
+git push origin
+
+
+Git Pull Branch from Remote
+
+List all local and remote branches of the current Git.
+git branch -a
+List only remote branches of the current Git.
+git branch -r
+Git Clone
+Clone the repository: https://abc.com/x/y.git to your local Git:
+git clone https://abc.com/x/y.git
+Clone the repository https://abc.com/x/y.git to a folder named "newlife":
+git clone https://abc.com/x/y.git newlife
+Rename the origin remote to upstream:
+git remote rename origin upstream
+
+
+
+Git .gitignore
+
+In .gitignore add a line to ignore all .temp files:
+*.temp
+In .gitignore add a line to ignore all files in any directory named temp:
+temp/
+In .gitignore add a single line to ignore all files named temp1.log, temp2.log, and temp3.log:
+temp?.log
+In .gitignore, ignore all .log files, except main.log:
+*.log
+!main.log
+
+
+
+Git Remote Add SHH
+
+Add a new remote named ssh-origin connecting to x/y.git on abc.com using SSH:
+git remote add ssh-origin git@abc.com:x/y.git
+Replace the remote URL for origin with x/y.git on abc.com using SSH:
+git remote set-url ssh-origin git@abc.com:x/y.git
+
+
+Git Revert
+
+Show the log of the repository, showing just 1 line per commit:
+git log --oneline
+revert the latest commit:
+git revert HEAD
+revert the latest commit, skipping the commit message editor:
+git revert HEAD --no-edit
+revert the two last commits:
+git revert HEAD~1
+
+Git Reset
+
+reset to the commit with the hash abc1234:
+git reset abc1234
+Git Amend
+
+Amend the previous commit to with the message "Updated index":
+git commit --amend -m "Updated index"
